@@ -1,0 +1,42 @@
+def my_function(a,b):
+    c = a+b
+    return(c)
+
+res = my_function(20,100)
+print(res)
+
+
+#local variable in function
+def test1():
+    name = "this is josh innovations"
+    print(name)
+
+test1()
+
+
+
+#global variable in function
+name = "this is josh innovations"
+def test1():
+    print(name)
+
+test1()
+print(name)
+
+
+
+
+name = "this is josh innovations"
+def test1():
+    global database
+    database = "MYSql"
+    print(database)
+
+
+def test2():
+    print(database)
+
+
+test1()
+test2()
+print(database)
